@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task AI</title>
+
+    <link rel="shortcut icon" href="./images/robot.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="./images/robot.png" alt="">
+            </div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="register">
+            <div class="loginimage">
+                <img src="./images/login.svg" alt="">
+            </div>
+            <div class="content">
+                <div class="card">
+                    <div class="signupform">
+                        <h2>Create your account</h2>
+
+                        <label for="username">Username</label>
+                        <input type="email" placeholder="Email" id="signupemail">
+
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Password" id="signuppassword">
+
+                        <label for="password">Confirm Password</label>
+                        <input type="password" placeholder="Confirm Password" id="signupconfirmpassword">
+
+                        <button onclick="createaccount()">Signup</button>
+                        <br><br>
+                        <p>Already a user? <span onclick="showlogin()">Login Here</span></p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="login">
+            <div class="loginimage">
+                <img src="./images/login.svg" alt="">
+            </div>
+            <div class="content">
+                <div class="card">
+                    <div class="loginform">
+                        <h2>Login</h2>
+
+                        <label for="username">Username</label>
+                        <input type="email" placeholder="Email" id="loginemail">
+
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Password" id="loginpassword">
+
+                        <button onclick="loginaccount()">Login</button>
+                        <br><br>
+                        <p>New user? <span onclick="showsignup()">Signup Here</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home">
+            <div class="content">
+                <h2>Artificial Intelligence</h2>
+                <h1>Software <br> Development</h1>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae accusamus eos molestiae provident
+                    laudantium. Dolores id officia quos inventore nisi.</p>
+                <br><br>
+                <button onclick="showsignup()">Signup</button>
+            </div>
+            <div class="homeimage">
+                <img src="./images/ai.png" alt="">
+            </div>
+        </div>
+
+        <div class="profile">
+            <h1>Welcome, <span id="user"></span></h1>
+
+            <h3>UID : <span id="useruid"></span></h3>
+
+            <h3>Email verified : <span id="userverified"></span></h3>
+
+
+            <button onclick="logout()">Logout</button>
+        </div>
+
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-auth.js"></script>
+    <script src="./js/firebase.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

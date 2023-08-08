@@ -1,0 +1,127 @@
+/* Login */
+
+.login , .register {
+  width: 100vw;
+  height: 100vh;
+  padding: 30px;
+  color: rgb(0, 15, 82);
+  display: none;
+  justify-content: center;
+}
+
+.login .loginimage , .register .loginimage {
+  width: 50%;
+}
+
+.login .content , .register .content{
+  width: 50%;
+  max-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login .loginimage,
+.content {
+  width: 50%;
+}
+
+.register .loginimage,
+.content {
+  width: 50%;
+}
+
+.login .loginimage img , .register .loginimage img {
+  width: 500px;
+  height: 500px;
+}
+
+
+.card div {
+  height: fit-content;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.062);
+  padding: 40px 35px;
+  color: #080710;
+}
+
+.card div h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+}
+
+.card div input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(233, 233, 233, 0.562);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  outline: none;
+  border: none;
+}
+
+.card div input::placeholder {
+  color: #080710;
+}
+
+.card div p {
+  text-align: center;
+}
+.card div span {
+  cursor: pointer;
+}
+
+
+.loginform label {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.loginform button {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #080710;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+/* Signup form */
+
+.signupform label {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.signupform button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #080710;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
